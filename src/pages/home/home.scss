@@ -1,3 +1,20 @@
-page-home {
+page-home{
+    .Loggin{
+        background-image: url("../assets/imgs/coff.jpg");
+        background-repeat :no-repeat;
 
+    }
+    .button {
+        display: inline-block;
+        padding:  25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: top;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px rgb(153, 153, 153);
+      }
+      
+ 
 }

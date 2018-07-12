@@ -1,0 +1,69 @@
+<!--
+  Generated template for the OrdersPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Orders</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="Order" >
+  <div id ="Cappucino">
+      <ion-item>
+          <ion-label>Cappucino</ion-label>
+          <ion-checkbox color="secondary" [(ngModel)]="Cappuino"></ion-checkbox>
+      </ion-item>
+      <img src ="./assets/imgs/cappucino.jpg">
+  </div>
+     
+
+<div id = "iced coffee">
+    <ion-item>
+        <ion-label>Iced Coffee </ion-label>
+        <ion-checkbox color="secondary" [(ngModel)] ="icedCoffee"></ion-checkbox>
+     </ion-item>
+     <img src ="./assets/imgs/coffee.jpg">
+</div>
+ 
+          <div id = Tea>
+              <ion-item>
+                  <ion-label>Tea  </ion-label>
+                  <ion-checkbox color="secondary" [(ngModel)] ="Tea"></ion-checkbox> 
+              </ion-item>
+              <img src ="./assets/imgs/Tea.jpg">
+          </div>
+ 
+    
+    <ion-grid>
+        <ion-row>
+          <ion-col col-2>
+            <button ion-button  round color="secondary" (click) ="Ording(+1)" >+ </button>
+          </ion-col>
+          <ion-col col-2>
+            <button ion-button round  color="secondary"(click) ="Ording(-1)" >- </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+
+   
+
+<ion-item>
+    <ion-label floating color="danger">Customer Name</ion-label>
+    <ion-input type="Name"></ion-input>
+  </ion-item>
+<ion-item>
+
+  <ion-col col-2><p> No: of coffees {{order}} </p></ion-col>
+  <ion-col col-2><p> Total Price {{Total}} </p></ion-col>
+ 
+</ion-item>
+<button ion-button full round color="secondary" (click)="PriceList()">Prices</button>
+<button ion-button full round color="secondary" (click)="Clear()">Clear</button>
+<button ion-button full round color="secondary" (click)="Exit()">Exit</button>
+</ion-content>
